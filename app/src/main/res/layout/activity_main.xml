@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Coroutines Apps"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/BtnCoroutineAppBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CoroutineAppBase"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/BtnCoroutineApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CoroutineApp #2"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnCoroutineAppBase" />
+
+        <Button
+            android:id="@+id/BtnSwitchCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch CoroutineApp #3"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnCoroutineApp2" />
+
+        <Button
+            android:id="@+id/BtnSequentialCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sequential Coroutine App"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnSwitchCoroutine" />
+
+        <Button
+            android:id="@+id/BtnParallelCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parallel Coroutine App"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnSequentialCoroutine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -4,12 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.remitap.coroutinesapp.SwitchingCoroutineApp.SwitchingCoroutine
+import com.remitap.coroutinesapp.coroutineSwitchingApp.SwitchingCoroutine
 import com.remitap.coroutinesapp.coroutineApp.CoroutinesBase
 import com.remitap.coroutinesapp.coroutineApp2.CoroutineApp2
 import com.remitap.coroutinesapp.coroutineParallelApp.CoroutineParallelApp
 import com.remitap.coroutinesapp.coroutineSeqApp.CoroutineSeqential
 import com.remitap.coroutinesapp.databinding.ActivityMainBinding
+import com.remitap.coroutinesapp.deepDiveCoroutinesFirst.DDCoroutineFirstAppActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,6 +43,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.BtnParallelCoroutine.setOnClickListener {
             var intent: Intent = Intent(this, CoroutineParallelApp::class.java)
+            startActivity(intent)
+        }
+
+        binding.BtnDDFirstCoroutineApp.setOnClickListener {
+            var intent: Intent = Intent(this, DDCoroutineFirstAppActivity::class.java)
             startActivity(intent)
         }
     }

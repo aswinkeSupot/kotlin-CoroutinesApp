@@ -13,13 +13,16 @@
         android:theme="@style/Theme.CoroutinesApp"
         tools:targetApi="31">
         <activity
+            android:name=".deepDiveCoroutinesFirst.DDCoroutineFirstAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".coroutineParallelApp.CoroutineParallelApp"
             android:exported="false" />
         <activity
             android:name=".coroutineSeqApp.CoroutineSeqential"
             android:exported="false" />
         <activity
-            android:name=".SwitchingCoroutineApp.SwitchingCoroutine"
+            android:name=".coroutineSwitchingApp.SwitchingCoroutine"
             android:exported="false" />
         <activity
             android:name=".coroutineApp.CoroutinesBase"

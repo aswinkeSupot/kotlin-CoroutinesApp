@@ -1,18 +1,12 @@
-package com.remitap.coroutinesapp.SwitchingCoroutineApp
+package com.remitap.coroutinesapp.coroutineSwitchingApp
 
 import android.os.Bundle
-import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import com.remitap.coroutinesapp.R
-import com.remitap.coroutinesapp.databinding.ActivityCoroutinesBaseBinding
 import com.remitap.coroutinesapp.databinding.ActivitySwitchingCoroutineBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 

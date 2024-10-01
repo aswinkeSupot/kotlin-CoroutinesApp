@@ -10,6 +10,8 @@ import com.remitap.coroutinesapp.coroutineApp2.CoroutineApp2
 import com.remitap.coroutinesapp.coroutineParallelApp.CoroutineParallelApp
 import com.remitap.coroutinesapp.coroutineSeqApp.CoroutineSeqential
 import com.remitap.coroutinesapp.databinding.ActivityMainBinding
+import com.remitap.coroutinesapp.deepDiveCoroutinesApp2.DDCoroutineApp2
+import com.remitap.coroutinesapp.deepDiveCoroutinesApp3.DDCoroutineApp3
 import com.remitap.coroutinesapp.deepDiveCoroutinesFirst.DDCoroutineFirstAppActivity
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +52,17 @@ class MainActivity : AppCompatActivity() {
             var intent: Intent = Intent(this, DDCoroutineFirstAppActivity::class.java)
             startActivity(intent)
         }
+
+        binding.BtnDDCoroutineApp2.setOnClickListener {
+            var intent: Intent = Intent(this, DDCoroutineApp2::class.java)
+            startActivity(intent)
+        }
+
+        binding.BtnDDCorutineApp3.setOnClickListener {
+            var intent: Intent = Intent(this, DDCoroutineApp3::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }

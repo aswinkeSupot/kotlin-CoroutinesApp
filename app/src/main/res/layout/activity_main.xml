@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CoroutineAppBase"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -81,5 +81,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/BtnParallelCoroutine" />
 
+        <Button
+            android:id="@+id/BtnDDCoroutineApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DD Suspend And WithContext"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnDDFirstCoroutineApp" />
+
+        <Button
+            android:id="@+id/BtnDDCorutineApp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DD Concurent Coroutines"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnDDCoroutineApp2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

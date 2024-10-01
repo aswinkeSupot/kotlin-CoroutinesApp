@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CoroutinesApp"
         tools:targetApi="31">
         <activity
+            android:name=".deepDiveCoroutinesApp3.DDCoroutineApp3"
+            android:exported="false" />
+        <activity
+            android:name=".deepDiveCoroutinesApp2.DDCoroutineApp2"
+            android:exported="false" />
+        <activity
             android:name=".deepDiveCoroutinesFirst.DDCoroutineFirstAppActivity"
             android:exported="false" />
         <activity

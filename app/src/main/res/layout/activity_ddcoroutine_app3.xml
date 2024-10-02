@@ -7,14 +7,15 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".deepDiveCoroutinesApp2.DDCoroutineApp2">
+        tools:context=".deepDiveCoroutinesApp3.DDCoroutineApp3">
 
         <TextView
             android:id="@+id/tvHint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="DDCoroutineApp2"
+            android:padding="10dp"
+            android:text="DD Concurrent/Sequential Coroutine And Parallel Coroutines"
             android:layout_marginTop="50dp"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,17 +45,18 @@
                     android:id="@+id/tvCounter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Counter"
+                    android:gravity="center"
+                    android:text="Concurrent/Sequentioal Coroutine"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
                 <Button
-                    android:id="@+id/btnCount"
+                    android:id="@+id/btnSequential"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Count" />
+                    android:text="Sequential" />
             </LinearLayout>
 
             <LinearLayout
@@ -70,17 +72,18 @@
                     android:id="@+id/tvDownloadBigFile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Download Big File"
+                    android:text="Parallel Coroutine"
+                    android:gravity="center"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
                 <Button
-                    android:id="@+id/btnDownload"
+                    android:id="@+id/btnParallel"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Download File" />
+                    android:text="Parallel" />
             </LinearLayout>
 
         </LinearLayout>
